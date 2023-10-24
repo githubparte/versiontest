@@ -20,10 +20,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         WITH_V: false
 
-    - name: Set up Java
-      uses: actions/setup-java@v1
-      with:
-        java-version: 11
-    - name: Bump version
-      id: bump
-      uses: mickem/gh-action-bump-maven-version@v1
+    # - name: Set up Java
+    #   uses: actions/setup-java@v1
+    #   with:
+    #     java-version: 11
+    # - name: Bump version
+    #   id: bump
+    #   uses: mickem/gh-action-bump-maven-version@v1
