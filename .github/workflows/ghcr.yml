@@ -1,8 +1,7 @@
 name: ghcr actions
 
 on:
-  schedule:
-    - cron: '21 21 * * *'
+  push:
 
 jobs:
   clean-ghcr:
