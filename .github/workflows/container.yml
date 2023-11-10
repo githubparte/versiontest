@@ -30,6 +30,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: |
+          tags:
 #            ghcr.io/${{ env.OWNER_LC }}:PR${{ github.event.number }}
             ghcr.io/${{ env.OWNER_LC }}:sha-${{ github.sha }}
