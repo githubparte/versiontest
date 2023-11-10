@@ -31,5 +31,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ OWNER_LC }}:PR${{ github.event.number }}
-            ghcr.io/${{ OWNER_LC }}:sha-${{ github.sha }}
+            ghcr.io/${{ OWNER }}:PR${{ github.event.number }}
+            ghcr.io/${{ OWNER }}:sha-${{ github.sha }}
