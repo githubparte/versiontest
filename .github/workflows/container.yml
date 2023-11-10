@@ -26,5 +26,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/githhubparte:PR${{ github.event.number }}
-            ghcr.io/githhubparte:sha-${{ github.sha }}
+            ghcr.io/${{ github.repository }}:PR${{ github.event.number }}
+            ghcr.io/${{ github.repository }}:sha-${{ github.sha }}
