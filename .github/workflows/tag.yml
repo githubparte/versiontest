@@ -1,3 +1,4 @@
+name: hey
 on:
   push:
     tags:
