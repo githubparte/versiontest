@@ -10,9 +10,7 @@ jobs:
       - name: Set output
         id: vars
         run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
-      - name: Check output
+      - name: Update pom file
         env:
           RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
-        run: |
-          echo $RELEASE_VERSION
-          echo ${{ steps.vars.outputs.tag }}
+        run: mvn versions:set -DnewVersion=${{ steps.vars.outputs.tag }}
